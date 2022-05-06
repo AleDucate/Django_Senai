@@ -2,5 +2,5 @@
 from django.http import HttpResponse
 
 def index(request):
-    return HttpResponse("Server , teste123")
+    return HttpResponse("teste de versao 123")
 
