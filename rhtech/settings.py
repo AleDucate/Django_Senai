@@ -55,7 +55,7 @@ ROOT_URLCONF = 'rhtech.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['teamplates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -107,9 +107,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pt-br'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Sao_Paulo'
 
 USE_I18N = True
 
@@ -129,24 +129,24 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #Activating Sql Logs
 
-LOGGING = {
-    'version': 1,
-    'filters': {
-        'require_debug_true': {
-            '()': 'django.utils.log.RequireDebugTrue',
-        }
-    },
-    'handlers': {
-        'console': {
-            'level': 'DEBUG',
-            'filters': ['require_debug_true'],
-            'class': 'logging.StreamHandler',
-        }
-    },
-    'loggers': {
-        'django.db.backends': {
-            'level': 'DEBUG',
-            'handlers': ['console'],
-        }
-    }
-}
+#LOGGING = {
+ #   'version': 1,
+  #  'filters': {
+   #     'require_debug_true': {
+    #        '()': 'django.utils.log.RequireDebugTrue',
+     #   }
+ #   },
+ #   'handlers': {
+ #       'console': {
+ #           'level': 'DEBUG',
+ #           'filters': ['require_debug_true'],
+ #           'class': 'logging.StreamHandler',
+ #       }
+ #   },
+ #   'loggers': {
+ #       'django.db.backends': {
+ #           'level': 'DEBUG',
+ #           'handlers': ['console'],
+ #       }
+ #   }
+#}
